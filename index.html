@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Jerónimo Larrotta León</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            padding:40px;
+        }
+
+        .container{
+            width:1000px;
+            background:#1e293b;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 0 25px rgba(0,0,0,0.4);
+            display:grid;
+            grid-template-columns:320px 1fr;
+        }
+
+        /* LADO IZQUIERDO */
+
+        .left{
+            background:#111827;
+            padding:30px;
+            text-align:center;
+        }
+
+        .profile img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid #ef4444;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .profile h1{
+            font-size:28px;
+            margin-bottom:10px;
+        }
+
+        .profile h3{
+            color:#94a3b8;
+            margin-bottom:30px;
+            font-weight:normal;
+        }
+
+        .section{
+            margin-top:35px;
+            text-align:left;
+        }
+
+        .section h2{
+            color:#ef4444;
+            margin-bottom:15px;
+            border-bottom:2px solid #ef4444;
+            padding-bottom:5px;
+        }
+
+        .section p{
+            line-height:1.7;
+            color:#d1d5db;
+        }
+
+        .skill{
+            margin-bottom:15px;
+        }
+
+        .skill span{
+            display:block;
+            margin-bottom:5px;
+        }
+
+        .bar{
+            background:#374151;
+            height:10px;
+            border-radius:20px;
+            overflow:hidden;
+        }
+
+        .fill{
+            background:#ef4444;
+            height:100%;
+        }
+
+        /* LADO DERECHO */
+
+        .right{
+            padding:40px;
+        }
+
+        .title{
+            font-size:40px;
+            color:#ef4444;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            font-size:18px;
+            color:#cbd5e1;
+            margin-bottom:30px;
+        }
+
+        .card{
+            background:#0f172a;
+            padding:25px;
+            border-radius:15px;
+            margin-bottom:25px;
+        }
+
+        .card h2{
+            color:#ef4444;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            line-height:1.8;
+            color:#e5e7eb;
+        }
+
+        ul{
+            margin-left:20px;
+            line-height:2;
+            color:#e5e7eb;
+        }
+
+        .contact{
+            margin-top:20px;
+        }
+
+        .contact p{
+            margin-bottom:10px;
+        }
+
+        @media(max-width:900px){
+
+            .container{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- IZQUIERDA -->
+
+        <div class="left">
+
+            <div class="profile">
+
+                <!-- CAMBIA EL NOMBRE DE LA IMAGEN -->
+                <img src="foto.png" alt="Foto Perfil">
+
+                <h1>Jerónimo Larrotta León</h1>
+
+                <h3>Estudiante de Ingeniería de Sistemas</h3>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Contacto</h2>
+
+                <p><strong>Email:</strong><br>
+                jlarrotal@ufpso.edu.co</p>
+
+                <br>
+
+                <p><strong>Código:</strong><br>
+                0192527</p>
+
+                <br>
+
+                <p><strong>Universidad:</strong><br>
+                Universidad Francisco de Paula Santander Ocaña</p>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Habilidades</h2>
+
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="bar">
+                        <div class="fill" style="width:85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="bar">
+                        <div class="fill" style="width:70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>GitHub</span>
+                    <div class="bar">
+                        <div class="fill" style="width:75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Trabajo en equipo</span>
+                    <div class="bar">
+                        <div class="fill" style="width:90%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Hobbies</h2>
+
+                <p>
+                    • Programación web<br>
+                    • Videojuegos<br>
+                    • Tecnología<br>
+                    • Aprender nuevas herramientas digitales<br>
+                    • Escuchar música y editar contenido
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- DERECHA -->
+
+        <div class="right">
+
+            <h1 class="title">Currículum Vitae</h1>
+
+            <p class="subtitle">
+                Estudiante de 4° semestre de Ingeniería de Sistemas
+            </p>
+
+            <div class="card">
+
+                <h2>Sobre mí</h2>
+
+                <p>
+                    Soy estudiante de Ingeniería de Sistemas de cuarto semestre,
+                    apasionado por el desarrollo web, la tecnología y la innovación.
+                    Me considero una persona responsable, creativa y con gran capacidad
+                    para aprender rápidamente nuevas herramientas tecnológicas.
+                    Disfruto trabajar en equipo y participar en proyectos que permitan
+                    desarrollar soluciones digitales útiles y modernas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Objetivos</h2>
+
+                <p>
+                    Mi meta principal es convertirme en un profesional destacado
+                    en el área del desarrollo de software y la ciberseguridad,
+                    adquiriendo experiencia en proyectos reales y fortaleciendo
+                    constantemente mis conocimientos en programación, bases de datos
+                    y tecnologías web modernas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Educación</h2>
+
+                <ul>
+                    <li>
+                        Ingeniería de Sistemas<br>
+                        Universidad Francisco de Paula Santander Ocaña
+                    </li>
+
+                    <li>
+                        Actualmente cursando cuarto semestre
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Perfil Profesional</h2>
+
+                <p>
+                    Interesado en el desarrollo frontend, diseño de páginas web,
+                    programación orientada a objetos y herramientas de desarrollo
+                    colaborativo como GitHub. Busco seguir fortaleciendo mis
+                    capacidades técnicas y humanas para aportar soluciones eficientes
+                    e innovadoras.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
